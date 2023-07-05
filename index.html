@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuarios</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        text-align: center;
+        color:yellow;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        }
+        input {
+            padding: 5px;
+            border-radius: 3px;
+            display: flex;
+            margin: 10px auto;
+            
+           
+           }
+</style>
+<body>
+    <h1>Sistema de Cadastro de Usuários</h1>
+<input id="nomeInput" type="text" value="" placeholder="Digite seu nome" >
+<input id="idadeInput" type="number" value="" placeholder="Digite sua idade">
+<input id="emailInput" type="email" value="" placeholder="Digite seu email">
+<input id="senhaInput" type="password" value="" placeholder="Digite uma senha">
+    
+    <button onclick="cadastrarUsuario()">Cadastrar Usuário</button>
+    <button onclick="exibirCadastros()">Exibir Cadastros</button>
+    <script src="./projeto.js"></script>
+</body>
+</html>
