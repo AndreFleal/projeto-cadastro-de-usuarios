@@ -11,26 +11,13 @@ const cadastros = [];
         const email = emailInput.value.trim();
         const senha = senhaInput.value.trim();
 
-        if (nome === "") {
-          alert("Digite seu nome");
+       
+        if ([nome, idade, email, senha].includes("")){
+          alert("Complete todos os campos")
           return;
         }
 
-        if (idade === "") {
-          alert("Digite a sua idade");
-          return;
-        }
-
-        if (email === "") {
-          alert("Digite o seu email");
-          return;
-        }
-
-        if (senha === "") {
-          alert("Digite a sua senha");
-          return;
-        }
-   
+        
 
       const usuario = {
         nome,
